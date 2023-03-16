@@ -11,7 +11,9 @@ import SwiftUI
 struct SplashScreenExampleApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            BumperScreen(viewModel: BumperScreenViewModel())
+//            IntroView(viewModel: IntroViewModel())
+//            SplashScreenView(viewModel: SplashScreenViewModel())
         }
     }
 }

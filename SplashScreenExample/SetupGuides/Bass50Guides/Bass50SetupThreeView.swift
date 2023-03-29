@@ -23,6 +23,7 @@ struct Bass50SetupThreeView: View {
                 Text("By registering your speaker, you'll unlock its extended X year warranty and allow us to provide you with faster support.")
                     .font(Font.size18PN())
                     .multilineTextAlignment(.center)
+                    .padding([.leading, .trailing])
                 Button(action: {
                     
                 }) {

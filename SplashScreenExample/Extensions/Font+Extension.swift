@@ -41,6 +41,34 @@ extension Font {
         Font.custom("Proxima Nova", size: 24)
     }
     
+    static func size28PN() -> Font {
+        Font.custom("Proxima Nova", size: 28)
+    }
+    
+    static func size32PN() -> Font {
+        Font.custom("Proxima Nova", size: 32)
+    }
+    
+    static func size36PN() -> Font {
+        Font.custom("Proxima Nova", size: 36)
+    }
+    
+    static func size40PN() -> Font {
+        Font.custom("Proxima Nova", size: 40)
+    }
+    
+    static func size48PN() -> Font {
+        Font.custom("Proxima Nova", size: 48)
+    }
+    
+    static func size52PN() -> Font {
+        Font.custom("Proxima Nova", size: 52)
+    }
+    
+    static func size56PN() -> Font {
+        Font.custom("Proxima Nova", size: 56)
+    }
+    
     static func semibold14PN() -> Font {
         Font.custom("Proxima Nova Semibold", size: 14)
     }

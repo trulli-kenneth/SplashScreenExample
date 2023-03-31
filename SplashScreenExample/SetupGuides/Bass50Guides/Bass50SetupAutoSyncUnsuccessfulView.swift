@@ -13,7 +13,7 @@ struct Bass50SetupAutoSyncUnsuccessfulView: View {
             Color(.trulliGold)
                 .ignoresSafeArea()
             VStack {
-                Text("BASS50 setup Complete")
+                Text("Auto Sync Unsuccessful")
                     .font(.semibold40PN())
                     .multilineTextAlignment(.center)
                     .padding()

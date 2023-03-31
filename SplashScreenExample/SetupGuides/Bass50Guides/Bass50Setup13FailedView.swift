@@ -26,7 +26,7 @@ struct Bass50Setup13FailedView: View {
                 Button(action: {
                     print("Navigate")
                 } ) {
-                    Text("Enter Settings")
+                    Text("Try Again")
                         .frame(width: 300, height: 50)
                         .foregroundColor(.white)
                         .background( Color.orange.opacity(0.7))

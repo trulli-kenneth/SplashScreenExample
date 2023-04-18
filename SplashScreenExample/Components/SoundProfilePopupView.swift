@@ -20,7 +20,7 @@ struct SoundProfilePopupView: View {
                 
             ForEach(0..<3) { num in
                     Button {
-                        tappedProfile()
+                    
                     } label: {
                         HStack {
                             Text("Sound Name")
@@ -34,6 +34,21 @@ struct SoundProfilePopupView: View {
                     }
                     .frame(minWidth: 160, minHeight: 32)
                 }
+            Button {
+                tappedProfile()
+            } label: {
+                HStack {
+                    Text("Sound Name")
+                        .foregroundColor(.black)
+                        .padding()
+                    Spacer()
+                    Image(systemName: "plus")
+                        .foregroundColor(.gray)
+                        .padding(.trailing)
+                }
+                .background(buttonBackground)
+            }
+            .frame(minWidth: 160, minHeight: 32)
         }
         .padding(.horizontal, 24)
         .padding(.vertical, 32)

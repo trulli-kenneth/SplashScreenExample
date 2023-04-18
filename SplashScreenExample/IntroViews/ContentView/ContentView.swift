@@ -42,21 +42,23 @@ struct ContentView: View {
                 }
             }
             .popup(with: sheetManager)
-            .navigationDestination(for: WelcomeScreenViewViewModel.self) { model in
-                WelcomeScreenView(viewModel: model, path: $path)
-            }
+//            .navigationDestination(for: WelcomeScreenViewViewModel.self) { model in
+//                WelcomeScreenView(viewModel: model, path: $path)
+//            }
             .navigationBarBackButtonHidden()
     }
     
     var continueButton: some View {
         Button(action: {
             print("pressed")
-            path.append(WelcomeScreenViewViewModel())
+            print(path)
+            path.append(GreaterViewOptions.whatIsNewView)
+//            path.append(WelcomeScreenViewViewModel())
         }) {
             Text("CONTINUE")
                 .foregroundColor(.white)
         }
-        .disabled(!self.areAllChecked)
+//        .disabled(!self.areAllChecked)
         .padding()
         .background(Color.orange)
         .foregroundColor(.white)

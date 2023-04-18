@@ -70,6 +70,11 @@
 		A5D2DAD329D20C0C0029993B /* Bass50SpeakerSystemConnectSuccuessfulView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D2DAD229D20C0C0029993B /* Bass50SpeakerSystemConnectSuccuessfulView.swift */; };
 		A5D2DAD529D32DD20029993B /* Bass50SpeakerSystemConnectStepThreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D2DAD429D32DD20029993B /* Bass50SpeakerSystemConnectStepThreeView.swift */; };
 		A5D2DAD729D32E8E0029993B /* Bass50SpeakerSystemOtherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D2DAD629D32E8E0029993B /* Bass50SpeakerSystemOtherView.swift */; };
+		A5D2DAD929DF0AD80029993B /* SpeakerSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D2DAD829DF0AD80029993B /* SpeakerSettingsView.swift */; };
+		A5D2DADB29E9977B0029993B /* SoundPresetCreationNameSoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D2DADA29E9977B0029993B /* SoundPresetCreationNameSoundView.swift */; };
+		A5D2DADD29E9A69C0029993B /* SoundPresetCreationLocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D2DADC29E9A69C0029993B /* SoundPresetCreationLocationsView.swift */; };
+		A5D2DADF29E9D0E00029993B /* SoundPresetCreationPlacementGuidesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D2DADE29E9D0E00029993B /* SoundPresetCreationPlacementGuidesView.swift */; };
+		A5D2DAE129E9DAE60029993B /* SoundPresetCreationSuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D2DAE029E9DAE60029993B /* SoundPresetCreationSuccessView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -158,6 +163,11 @@
 		A5D2DAD229D20C0C0029993B /* Bass50SpeakerSystemConnectSuccuessfulView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bass50SpeakerSystemConnectSuccuessfulView.swift; sourceTree = "<group>"; };
 		A5D2DAD429D32DD20029993B /* Bass50SpeakerSystemConnectStepThreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bass50SpeakerSystemConnectStepThreeView.swift; sourceTree = "<group>"; };
 		A5D2DAD629D32E8E0029993B /* Bass50SpeakerSystemOtherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bass50SpeakerSystemOtherView.swift; sourceTree = "<group>"; };
+		A5D2DAD829DF0AD80029993B /* SpeakerSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerSettingsView.swift; sourceTree = "<group>"; };
+		A5D2DADA29E9977B0029993B /* SoundPresetCreationNameSoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPresetCreationNameSoundView.swift; sourceTree = "<group>"; };
+		A5D2DADC29E9A69C0029993B /* SoundPresetCreationLocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPresetCreationLocationsView.swift; sourceTree = "<group>"; };
+		A5D2DADE29E9D0E00029993B /* SoundPresetCreationPlacementGuidesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPresetCreationPlacementGuidesView.swift; sourceTree = "<group>"; };
+		A5D2DAE029E9DAE60029993B /* SoundPresetCreationSuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPresetCreationSuccessView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -278,8 +288,13 @@
 			isa = PBXGroup;
 			children = (
 				A52F1D432995509C004896DC /* SpeakerCardView.swift */,
+				A5D2DADE29E9D0E00029993B /* SoundPresetCreationPlacementGuidesView.swift */,
 				A52F1D47299D18A9004896DC /* AddSpeakerCardView.swift */,
 				A52F1D4129954BB0004896DC /* HomeView.swift */,
+				A5D2DAD829DF0AD80029993B /* SpeakerSettingsView.swift */,
+				A5D2DADA29E9977B0029993B /* SoundPresetCreationNameSoundView.swift */,
+				A5D2DADC29E9A69C0029993B /* SoundPresetCreationLocationsView.swift */,
+				A5D2DAE029E9DAE60029993B /* SoundPresetCreationSuccessView.swift */,
 			);
 			path = HomeView;
 			sourceTree = "<group>";
@@ -423,7 +438,7 @@
 		A52F1E9329C25D59004896DC /* SpeakerStepOne */ = {
 			isa = PBXGroup;
 			children = (
-				A52F1E2829ACFBC0004896DC /* SetupGuideSpeakerConnectionStepTwoView.swift */,
+				A52F1E2629ACF712004896DC /* SetupGuideSpeakerConnectionStepOneView.swift */,
 			);
 			path = SpeakerStepOne;
 			sourceTree = "<group>";
@@ -431,7 +446,7 @@
 		A52F1E9429C25D6A004896DC /* SpeakerStepTwo */ = {
 			isa = PBXGroup;
 			children = (
-				A52F1E2629ACF712004896DC /* SetupGuideSpeakerConnectionStepOneView.swift */,
+				A52F1E2829ACFBC0004896DC /* SetupGuideSpeakerConnectionStepTwoView.swift */,
 			);
 			path = SpeakerStepTwo;
 			sourceTree = "<group>";
@@ -579,8 +594,10 @@
 				A5D2DAB529CC8D890029993B /* Bass50SetupFourteenView.swift in Sources */,
 				A52F1E2929ACFBC0004896DC /* SetupGuideSpeakerConnectionStepTwoView.swift in Sources */,
 				A52F1D3C2992CA78004896DC /* WelcomeScreenView.swift in Sources */,
+				A5D2DADB29E9977B0029993B /* SoundPresetCreationNameSoundView.swift in Sources */,
 				A5D2DABF29CCA3790029993B /* Bass50SetupNineteenSyncStartView.swift in Sources */,
 				A52F1D402993FE9A004896DC /* WelcomeScreenTabbedView.swift in Sources */,
+				A5D2DADF29E9D0E00029993B /* SoundPresetCreationPlacementGuidesView.swift in Sources */,
 				A52F1D362992B354004896DC /* PopupView.swift in Sources */,
 				A5D2DAB929CC93A80029993B /* Bass50SetupThirteenLastAttemptView.swift in Sources */,
 				A508D86929804D3F00624B83 /* ContentView.swift in Sources */,
@@ -593,6 +610,7 @@
 				A52F1CE52981A7A5004896DC /* BumperScreen.swift in Sources */,
 				A52F1E9629C25DD1004896DC /* SetupGuideSpeakerSearchViewViewModel.swift in Sources */,
 				A52F1E4A29B8EE06004896DC /* Bass50SetupThreeView.swift in Sources */,
+				A5D2DAD929DF0AD80029993B /* SpeakerSettingsView.swift in Sources */,
 				A5D2DAB729CC91680029993B /* Bass50Setup13FailedView.swift in Sources */,
 				A5D2DAA929CB46E60029993B /* Bass50SetupFiveView.swift in Sources */,
 				A52F1D4629958499004896DC /* SoundProfilePopupView.swift in Sources */,
@@ -603,10 +621,12 @@
 				A5D2DAA729CB40B00029993B /* Bass50SetupFourView.swift in Sources */,
 				A52F1E2529ACF178004896DC /* SetupGuideSpeakerSearchView.swift in Sources */,
 				A5D2DAD729D32E8E0029993B /* Bass50SpeakerSystemOtherView.swift in Sources */,
+				A5D2DAE129E9DAE60029993B /* SoundPresetCreationSuccessView.swift in Sources */,
 				A52F1CF42984416F004896DC /* CheckBoxField.swift in Sources */,
 				A5D2DAD529D32DD20029993B /* Bass50SpeakerSystemConnectStepThreeView.swift in Sources */,
 				A52F1CEE2982D45C004896DC /* BumperScreenViewModel.swift in Sources */,
 				A5D2DAB329CC85D40029993B /* Bass50SetupThirteenView.swift in Sources */,
+				A5D2DADD29E9A69C0029993B /* SoundPresetCreationLocationsView.swift in Sources */,
 				A5D2DAD129D20A4F0029993B /* Bass50SpeakerSystemConnectStepTwoView.swift in Sources */,
 				A508D89129804D9C00624B83 /* SplashScreenView.swift in Sources */,
 				A5D2DABB29CC9BF70029993B /* Bass50SetupSeventeenCDMountView.swift in Sources */,

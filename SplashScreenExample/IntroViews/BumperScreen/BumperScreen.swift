@@ -23,7 +23,7 @@ struct BumperScreen: View {
     
     var body: some View {
         if isDoneOnboarding {
-            HomeView()
+            BaseView()
                 .environmentObject(sheetManager)
         } else {
             NavigationStack(path: $path) {
@@ -38,7 +38,8 @@ struct BumperScreen: View {
                                 .task {
                                     try? await viewModel.getDataFromAPI()
                                     try? await Task.sleep(for: Duration.seconds(1))
-                                    path.append(ContentViewViewModel())
+//                                    path.append(ContentViewViewModel())
+                                    path.append(GreaterViewOptions.contentView)
                                     doneLoading.toggle()
                                     show.toggle()
                                     print("Done")
@@ -53,6 +54,10 @@ struct BumperScreen: View {
                     .navigationDestination(for: ContentViewViewModel.self) { model in
                         ContentView(viewModel: model, path: $path)
                             .environmentObject(sheetManager)
+                    }
+                    .navigationDestination(for: GreaterViewOptions.self) { option in
+                        option.view($path, doneOnboarding: $isDoneOnboarding)
+                        
                     }
                 }
             }

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SpeakerCardView: View {
     let didPressSoundButton: () -> Void
-    
+    let didPressSpeaker: () -> Void
     var body: some View {
         VStack {
             speakerType
@@ -22,6 +22,15 @@ struct SpeakerCardView: View {
         .background(background)
 //        .frame(height: 350 )
         .padding()
+        .overlay(alignment: .topTrailing) {
+            Button(action: {
+                didPressSpeaker()
+            }) {
+                Image(systemName: "chevron.forward")
+                    .foregroundColor(.black)
+            }
+            .offset(x: -34, y: 34)
+        }
     }
     
     var speakerType: some View {
@@ -100,6 +109,6 @@ struct SpeakerCardView: View {
 
 struct SpeakerCardView_Previews: PreviewProvider {
     static var previews: some View {
-        SpeakerCardView(didPressSoundButton: {})
+        SpeakerCardView(didPressSoundButton: {}, didPressSpeaker: {})
     }
 }

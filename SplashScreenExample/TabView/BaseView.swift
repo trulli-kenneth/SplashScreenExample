@@ -9,13 +9,17 @@ import SwiftUI
 
 struct BaseView: View {
     @StateObject var appState = AppState()
-    
+    @EnvironmentObject var sheetManager: SheetManager
     var body: some View {
         TabView(selection: $appState.selectedTab) {
-             MyHomeView()
+             HomeView()
+                .environmentObject(sheetManager)
                  .tag(ContentViewTab.home)
                  .tabItem {
                      Label("Home", systemImage: "house.fill")
+                         .background(
+                            Color.gray
+                         )
                  }
 
              SettingsView()
@@ -48,6 +52,7 @@ enum ContentViewTab {
 enum HomeNavDestination {
     case details
     case otherDetails
+    case speakerSetting
 }
 
 enum SettingsNavDestination {
@@ -76,6 +81,8 @@ struct MyHomeView: View {
                     
                 case .otherDetails:
                     OtherDetailsView()
+                case .speakerSetting:
+                    Text("Let's do it")
                 }
             }
         }

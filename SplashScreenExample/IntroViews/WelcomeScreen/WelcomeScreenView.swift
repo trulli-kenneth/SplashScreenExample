@@ -40,11 +40,11 @@ struct WelcomeScreenView: View {
                     closeButton
                 }
             }
-            .navigationDestination(for: SetupGuideSpeakerSearchViewViewModel.self) { model in
-                SetupGuideSpeakerSearchView(viewModel: model, path: $path )
-//                SetupGuideSpeakerSearchView(viewModel: model)
-//                Text("Balls are shown")
-            }
+//            .navigationDestination(for: SetupGuideSpeakerSearchViewViewModel.self) { model in
+//                SetupGuideSpeakerSearchView(viewModel: model, path: $path )
+////                SetupGuideSpeakerSearchView(viewModel: model)
+////                Text("Balls are shown")
+//            }
         .navigationBarBackButtonHidden()
     }
     
@@ -68,7 +68,7 @@ struct WelcomeScreenView: View {
                     currentIndex = currentIndex + 1
                 }
             } else {
-//                path.append(GreaterViewOptions.speakerSetUpStart)
+                path.append(GreaterViewOptions.speakerSetUpStart)
             }
         }) {
             Text(isNotLastPhoto ? "NEXT" : "Continue")
@@ -84,7 +84,7 @@ struct WelcomeScreenView: View {
     
     var closeButton: some View {
         Button(action: {
-            path.append(SetupGuideSpeakerSearchViewViewModel())
+            path.append(GreaterViewOptions.speakerSetUpStart)
         }) {
             Text("Close")
                 .foregroundColor(Color.orange)

@@ -29,7 +29,7 @@ struct SetupGuideSpeakerSearchView: View {
                                 try? await getDataFromAPI()
                                 try? await Task.sleep(for: Duration.seconds(1))
                                 isDone.toggle()
-//                                path.append(GreaterViewOptions.speakerSetUpStepOne)
+                                path.append(GreaterViewOptions.speakerSetUpStepOne)
                             }
                 }
             }

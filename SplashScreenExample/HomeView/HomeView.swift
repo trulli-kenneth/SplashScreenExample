@@ -9,18 +9,36 @@ import SwiftUI
 
 enum HomeViewOptions {
     case soundSettings
-    
+    case soundPreset
+    case soundPresetLocations
+    case soundGuides
+    case soundSuccess
+    @ViewBuilder func view(_ path: Binding<NavigationPath>) -> some View{
+        switch self {
+        case .soundSettings:
+            SpeakerSettingsView()
+        case .soundPreset:
+            SoundPresetCreationNameSoundView(homePath: path )
+        case .soundPresetLocations:
+            SoundPresetCreationLocationsView(homePath: path)
+        case .soundGuides:
+            SoundPresetCreationPlacementGuidesView(homePath: path)
+        case .soundSuccess:
+            SoundPresetCreationSuccessView(homePath: path)
+        
+        }
+    }
 }
 
 struct HomeView: View {
-//    @EnvironmentObject var sheetManager: SheetManager
+    @StateObject var sheetManager: SheetManager = SheetManager()
     @State var isPlaying: Bool = false
     @State private var volumeLevel: Double = 0
     @State private var bassLevel: Double = 0
     @State var homePath: NavigationPath = NavigationPath()
     
     var body: some View {
-//        NavigationStack(path: $homePath) {
+        NavigationStack(path: $homePath) {
             ZStack {
                 Color(.trulliGold)
                     .ignoresSafeArea()
@@ -36,9 +54,13 @@ struct HomeView: View {
                     controlsView
                 }
             }
-//            .popup(with: sheetManager) {
-//                print("pressed")
-//            }
+            .navigationDestination(for: HomeViewOptions.self) { option in
+                option.view($homePath)
+            }
+            .popup(with: sheetManager) {
+                homePath.append(HomeViewOptions.soundPreset)
+            }
+        }
             .navigationBarBackButtonHidden(true)
 //        }
     }
@@ -54,15 +76,20 @@ struct HomeView: View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(alignment: .center, spacing: 10) {
                 SpeakerCardView(didPressSoundButton: {
-                    
+//                    homePath.append(HomeViewOptions.soundPreset)
                     withAnimation {
-//                        sheetManager.present(with: .init(systemName: "info",
-//                                                         title: "AIDS",
-//                                                         content: "Butthole sex",
-//                                                         type: .soundProfileList))
+                        sheetManager.present(with: .init(systemName: "info",
+                                                         title: "AIDS",
+                                                         content: "Butthole sex",
+                                                         type: .soundProfileList))
                     }
+                },
+                                didPressSpeaker: {
+                    homePath.append(HomeViewOptions.soundSettings)
+
                 })
                 .frame(minWidth: 325 )
+                
                 
                 AddSpeakerCardView(didPressSoundButton: {
                     print("Go to new speaker detection")

@@ -34,7 +34,6 @@ struct SetupGuideSpeakerConnectionStepTwoView: View {
                         .padding()
                     Spacer()
                     Button(action: {
-                        isSelected = true
                         path.append(GreaterViewOptions.jam5ConnectionSuccessfull)
                         print("Navigate")
                     } ) {

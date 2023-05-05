@@ -18,7 +18,7 @@ struct SetupGuideSpeakerSearchView: View {
     
     var body: some View {
             ZStack {
-                Color(.trulliGold)
+                Color.trulliGold
                     .ignoresSafeArea()
                 VStack{
                         Image("Unknown")
@@ -33,9 +33,6 @@ struct SetupGuideSpeakerSearchView: View {
                             }
                 }
             }
-//            .navigationDestination(for: GreaterViewOptions.self) { bool in
-//                bool.view($path, doneOnboarding: $isDone)
-//            }
         .navigationBarBackButtonHidden()
     }
     

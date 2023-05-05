@@ -16,7 +16,7 @@ enum SpeakerSystemType {
 struct Bass50SetupSpeakerSystemStartView: View {
     var body: some View {
         ZStack {
-            Color(.trulliGold)
+            Color.trulliGold
                 .ignoresSafeArea()
             
             VStack(alignment: .center) {

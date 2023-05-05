@@ -44,7 +44,7 @@ struct SpeakerCardView: View {
         HStack {
             Circle()
                 .frame(width: 10)
-                .foregroundColor(Color.orange)
+                .foregroundColor(Color.buttonColorRed)
             Text("Firmware Update Available")
                 .font(Font.size12PN())
             Spacer()
@@ -72,7 +72,7 @@ struct SpeakerCardView: View {
     }
     
     var background: some View {
-        RoundedCorners(color: .white,
+        RoundedCorners(color: Color.trulliWhite,
                        tl: 08,
                        tr: 08,
                        bl: 08,
@@ -87,13 +87,13 @@ struct SpeakerCardView: View {
         }) {
             HStack {
                 Image(systemName: "music.note")
-                    .foregroundColor(.black)
+                    .foregroundColor(Color.trulliBlack)
                     .padding(.leading)
                 VStack(alignment: .leading) {
                     Text("Sound")
-                        .foregroundColor(.black)
+                        .foregroundColor(Color.trulliBlack)
                     Text("Name of Sound")
-                        .foregroundColor(.black)
+                        .foregroundColor(Color.trulliBlack)
                 }
                 .padding(.leading)
                 Spacer()

@@ -10,7 +10,7 @@ import SwiftUI
 struct Bass50SetupNineView: View {
     var body: some View {
         ZStack {
-            Color(.trulliGold)
+            Color.trulliGold
                 .ignoresSafeArea()
             
             VStack(alignment: .center) {
@@ -38,21 +38,7 @@ struct Bass50SetupNineView: View {
                 .background(.gray)
                 .padding()
                 
-                Button(action: {
-                    
-                }) {
-                    HStack {
-                        Image(systemName: "car")
-                            .font(.size52PN())
-                            .padding()
-                        Text("Closed Trunk (Sedan)")
-                            .font(.semibold28PN())
-                            .foregroundColor(.white)
-                        Spacer()
-                    }
-                }
-                .background(.gray)
-                .padding()
+                closedTrunkSedanButton
                 
                 Button(action: {
                     
@@ -98,6 +84,24 @@ struct Bass50SetupNineView: View {
                 }
             }
         }
+    }
+    
+    var closedTrunkSedanButton: some View {
+        Button(action: {
+            
+        }) {
+            HStack {
+                Image(systemName: "car")
+                    .font(.size52PN())
+                    .padding()
+                Text("Closed Trunk (Sedan)")
+                    .font(.semibold28PN())
+                    .foregroundColor(.white)
+                Spacer()
+            }
+        }
+        .background(.gray)
+        .padding()
     }
 }
 

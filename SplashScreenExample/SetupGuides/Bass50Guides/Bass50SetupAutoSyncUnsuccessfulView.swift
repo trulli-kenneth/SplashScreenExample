@@ -10,7 +10,7 @@ import SwiftUI
 struct Bass50SetupAutoSyncUnsuccessfulView: View {
     var body: some View {
         ZStack {
-            Color(.trulliGold)
+            Color.trulliGold
                 .ignoresSafeArea()
             VStack {
                 Text("Auto Sync Unsuccessful")
@@ -29,7 +29,7 @@ struct Bass50SetupAutoSyncUnsuccessfulView: View {
                     Text("TRY AGAIN")
                         .frame(width: 300, height: 50)
                         .foregroundColor(.white)
-                        .background( Color.orange.opacity(0.7))
+                        .background( Color.buttonColorRed)
                         .padding()
                 }
                 Button(action: {
@@ -39,7 +39,7 @@ struct Bass50SetupAutoSyncUnsuccessfulView: View {
                     Text("MANUAL SYNC")
                         .frame(width: 300, height: 50)
                         .foregroundColor(.white)
-                        .background( Color.orange.opacity(0.7))
+                        .background( Color.buttonColorRed)
                         .padding()
                 }
                 Spacer()

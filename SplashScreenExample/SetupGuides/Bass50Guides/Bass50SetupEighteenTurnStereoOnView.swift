@@ -10,7 +10,7 @@ import SwiftUI
 struct Bass50SetupEighteenTurnStereoOnView: View {
     var body: some View {
         ZStack {
-            Color(.trulliGold)
+            Color.trulliGold
                 .ignoresSafeArea()
             VStack {
                 Text("Turn car stereo on")
@@ -34,7 +34,7 @@ struct Bass50SetupEighteenTurnStereoOnView: View {
                     Text("CONTINUE")
                         .frame(width: 300, height: 50)
                         .foregroundColor(.white)
-                        .background( Color.orange.opacity(0.7))
+                        .background( Color.buttonColorRed )
                         .padding()
                 }
             }

@@ -12,12 +12,11 @@ struct Bass50SetupTwoView: View {
     
     var body: some View {
         ZStack {
-            Color(.trulliGold)
+            Color.trulliGold
                 .ignoresSafeArea()
             VStack {
                 updateAvailableTitle
                 Spacer()
-                Image("Unknown")
                 speakerImageAndMessage
                 Spacer()
                 updateButton
@@ -35,10 +34,13 @@ struct Bass50SetupTwoView: View {
     }
     
     var speakerImageAndMessage: some View {
-        Text("Please ensure your speaker remains powered on and near your mobile device")
-            .font(Font.size18PN())
-            .multilineTextAlignment(.center)
-            .padding()
+        VStack {
+            Image("Unknown")
+            Text("Please ensure your speaker remains powered on and near your mobile device")
+                .font(Font.size18PN())
+                .multilineTextAlignment(.center)
+                .padding()
+        }
     }
     
     var updateButton: some View {
@@ -48,7 +50,7 @@ struct Bass50SetupTwoView: View {
             Text("START UPDATE")
                 .frame(width: 300, height: 50)
                 .foregroundColor(.white)
-                .background( Color.orange.opacity(0.7))
+                .background( Color.buttonColorRed)
         }
         .padding(.bottom)
     }

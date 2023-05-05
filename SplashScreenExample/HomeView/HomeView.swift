@@ -13,10 +13,11 @@ enum HomeViewOptions {
     case soundPresetLocations
     case soundGuides
     case soundSuccess
+    case soundSetting
     @ViewBuilder func view(_ path: Binding<NavigationPath>) -> some View{
         switch self {
         case .soundSettings:
-            SpeakerSettingsView()
+            SpeakerSettingsView(homePath: path)
         case .soundPreset:
             SoundPresetCreationNameSoundView(homePath: path )
         case .soundPresetLocations:
@@ -25,7 +26,9 @@ enum HomeViewOptions {
             SoundPresetCreationPlacementGuidesView(homePath: path)
         case .soundSuccess:
             SoundPresetCreationSuccessView(homePath: path)
-        
+        case .soundSetting:
+            SoundSettingsView(homePath: path)
+                .environmentObject(SheetManager())
         }
     }
 }
@@ -40,7 +43,7 @@ struct HomeView: View {
     var body: some View {
         NavigationStack(path: $homePath) {
             ZStack {
-                Color(.trulliGold)
+                Color.trulliGold
                     .ignoresSafeArea()
                 VStack {
                     HStack {
@@ -62,7 +65,7 @@ struct HomeView: View {
             }
         }
             .navigationBarBackButtonHidden(true)
-//        }
+
     }
     
     var speakerCardsView: some View {
@@ -190,7 +193,7 @@ struct HomeView: View {
     }
     
     var background: some View {
-        RoundedCorners(color: .white,
+        RoundedCorners(color: Color.trulliWhite,
                        tl: 8,
                        tr: 8,
                        bl: 8,

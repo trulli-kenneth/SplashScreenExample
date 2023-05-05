@@ -11,7 +11,7 @@ struct SoundPresetCreationSuccessView: View {
     @Binding var homePath: NavigationPath
     var body: some View {
         ZStack {
-            Color(.trulliGold)
+            Color.trulliGold
                 .ignoresSafeArea()
             VStack {
                 Text("Sound creation successful")
@@ -27,7 +27,7 @@ struct SoundPresetCreationSuccessView: View {
                     Text("Continue")
                         .frame(width: 300, height: 50)
                         .foregroundColor(.white)
-                        .background( Color.orange.opacity(0.7))
+                        .background( Color.buttonColorRed )
                         .padding()
                 }
             }

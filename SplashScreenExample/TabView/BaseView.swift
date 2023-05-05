@@ -22,7 +22,7 @@ struct BaseView: View {
                          )
                  }
 
-             SettingsView()
+             SettingsTabView()
                  .tag(ContentViewTab.settings)
                  .tabItem {
                      Label("Settings", systemImage: "gearshape.fill")
@@ -35,6 +35,7 @@ struct BaseView: View {
 struct BaseView_Previews: PreviewProvider {
     static var previews: some View {
         BaseView()
+            .environmentObject(SheetManager())
     }
 }
 

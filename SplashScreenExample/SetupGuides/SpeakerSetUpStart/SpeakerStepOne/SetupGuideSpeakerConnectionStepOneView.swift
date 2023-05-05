@@ -11,15 +11,11 @@ struct SetupGuideSpeakerConnectionStepOneView: View {
     @Binding var path: NavigationPath
     @State var isSelected: Bool = false
     var body: some View {
-//        NavigationStack(path: $path) {
             ZStack {
-                Color(.trulliGold)
+                Color.trulliGold
                     .ignoresSafeArea()
                 VStack {
-                    Text("Speaker Connection Guide")
-                        .font(Font.semibold24PN())
-                        .multilineTextAlignment(.center)
-                        .padding()
+                    title
                     Spacer()
                     Image("Unknown")
                         .scaledToFit()
@@ -40,10 +36,9 @@ struct SetupGuideSpeakerConnectionStepOneView: View {
                         Text("Next")
                             .frame(width: 300, height: 50)
                             .foregroundColor(.white)
-                            .background( Color.orange.opacity(0.7))
+                            .background( Color.buttonColorRed)
                             .padding()
                     } 
-                    navigationLink
                     
                     Text("Contact Support")
                         .font(Font.size12PN())
@@ -53,10 +48,11 @@ struct SetupGuideSpeakerConnectionStepOneView: View {
         .navigationBarBackButtonHidden()
     }
     
-    var navigationLink: some View {
-        NavigationLink(value: isSelected) {
-            EmptyView()
-        }
+    var title: some View {
+        Text("Speaker Connection Guide")
+            .font(Font.semibold24PN())
+            .multilineTextAlignment(.center)
+            .padding()
     }
 }
 

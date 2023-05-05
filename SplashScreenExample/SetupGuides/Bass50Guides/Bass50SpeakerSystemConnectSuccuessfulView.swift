@@ -10,7 +10,7 @@ import SwiftUI
 struct Bass50SpeakerSystemConnectSuccuessfulView: View {
     var body: some View {
         ZStack {
-            Color(.trulliGold)
+            Color.trulliGold
                 .ignoresSafeArea()
             VStack {
                 Spacer()
@@ -28,8 +28,7 @@ struct Bass50SpeakerSystemConnectSuccuessfulView: View {
                         .font(.size20PN())
                         .frame(width: 300, height: 75 )
                         .foregroundColor(.white)
-                        .background( Color.orange.opacity(0.7))
-                        .padding()
+                        .background( Color.buttonColorRed )
                 }
             }
         }

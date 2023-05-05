@@ -10,7 +10,7 @@ import SwiftUI
 struct Bass50SetupThirteenLastAttemptView: View {
     var body: some View {
         ZStack {
-            Color(.trulliGold)
+            Color.trulliGold
                 .ignoresSafeArea()
             VStack {
                 Text("Remote not Found, is your remote powered on?")

@@ -12,7 +12,7 @@ struct Bass50SetupSixView: View {
     
     var body: some View {
         ZStack {
-            Color(.trulliGold)
+            Color.trulliGold
                 .ignoresSafeArea()
             VStack {
                 Text("Name your vehicle")
@@ -38,7 +38,7 @@ struct Bass50SetupSixView: View {
                 .foregroundColor(.white)
         }
         .padding()
-        .background(Color.orange)
+        .background(Color.buttonColorRed)
         .foregroundColor(.white)
         .clipShape(Capsule())
         .padding(.bottom, 32)

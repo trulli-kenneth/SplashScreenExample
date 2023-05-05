@@ -57,7 +57,7 @@ struct AddSpeakerCardView: View {
 
     
     var background: some View {
-        RoundedCorners(color: .white,
+        RoundedCorners(color: .trulliWhite,
                        tl: 08,
                        tr: 08,
                        bl: 08,

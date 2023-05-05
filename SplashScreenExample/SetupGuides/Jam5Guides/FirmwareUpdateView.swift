@@ -12,7 +12,7 @@ struct FirmwareUpdateView: View {
     
     var body: some View {
         ZStack {
-            Color(.trulliGold)
+            Color.trulliGold
                 .ignoresSafeArea()
             VStack {
                 updateAvailableTitle
@@ -48,7 +48,7 @@ struct FirmwareUpdateView: View {
             Text("START UPDATE")
                 .frame(width: 300, height: 50)
                 .foregroundColor(.white)
-                .background( Color.orange.opacity(0.7))
+                .background( Color.buttonColorRed )
         }
         .padding(.bottom)
     }

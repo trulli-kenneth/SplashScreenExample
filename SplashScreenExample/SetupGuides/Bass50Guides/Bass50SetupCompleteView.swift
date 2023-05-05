@@ -10,7 +10,7 @@ import SwiftUI
 struct Bass50SetupCompleteView: View {
     var body: some View {
         ZStack {
-            Color(.trulliGold)
+            Color.trulliGold
                 .ignoresSafeArea()
             VStack {
                 Text("BASS50 setup Complete")
@@ -30,7 +30,7 @@ struct Bass50SetupCompleteView: View {
                     Text("CONTINUE")
                         .frame(width: 300, height: 50)
                         .foregroundColor(.white)
-                        .background( Color.orange.opacity(0.7))
+                        .background( Color.buttonColorRed )
                         .padding()
                 }
             }

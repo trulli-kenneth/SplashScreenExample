@@ -13,7 +13,7 @@ struct Bass50SetupThirteenView: View {
     
     var body: some View {
         ZStack {
-            Color(.trulliGold)
+            Color.trulliGold
                 .ignoresSafeArea()
             VStack {
                 Text("Searching for Remote")

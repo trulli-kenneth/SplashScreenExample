@@ -10,7 +10,7 @@ import SwiftUI
 struct Bass50SpeakerSystemOtherView: View {
     var body: some View {
         ZStack {
-            Color(.trulliGold)
+            Color.trulliGold
                 .ignoresSafeArea()
             VStack {
                 Text("Connecting BASS50 to non-Trulli speakers")
@@ -33,7 +33,7 @@ struct Bass50SpeakerSystemOtherView: View {
                     Text("DOWNLOAD USER MANUAL")
                         .frame(width: 300, height: 50)
                         .foregroundColor(.white)
-                        .background( Color.orange.opacity(0.7))
+                        .background( Color.buttonColorRed)
                         .padding()
                 }
             }

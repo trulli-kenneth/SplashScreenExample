@@ -28,7 +28,7 @@ struct BumperScreen: View {
         } else {
             NavigationStack(path: $path) {
                 ZStack {
-                    Color(.trulliGold)
+                    Color.trulliGold
                         .ignoresSafeArea()
                     VStack {
                         if show {
@@ -103,6 +103,13 @@ struct MyBaseView: View {
 
 extension UIColor {
     static let trulliGold: UIColor = UIColor(red: 238/255, green: 233/255, blue: 220/255, alpha: 1.0)
+}
+
+extension Color {
+    static let trulliGold = Color("TrulliGold")
+    static let trulliBlack = Color("TrulliBlack")
+    static let trulliWhite = Color("TrulliWhite")
+    static let buttonColorRed = Color("ButtonColor")
 }
 
 struct LoadingAnimatedView: UIViewRepresentable {

@@ -23,7 +23,7 @@ struct ContentView: View {
     
     var body: some View {
             ZStack {
-                Color(.trulliGold)
+                Color.trulliGold
                     .ignoresSafeArea()
                 VStack {
                     Spacer()
@@ -60,7 +60,7 @@ struct ContentView: View {
         }
 //        .disabled(!self.areAllChecked)
         .padding()
-        .background(Color.orange)
+        .background(Color.buttonColorRed)
         .foregroundColor(.white)
         .clipShape(Capsule())
         .padding(.bottom, 32)

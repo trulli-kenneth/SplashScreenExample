@@ -12,7 +12,7 @@ struct Bass50SetupOneView: View {
     
     var body: some View {
         ZStack {
-            Color(.trulliGold)
+            Color.trulliGold
                 .ignoresSafeArea()
             VStack{
                 Spacer()
@@ -44,7 +44,7 @@ struct Bass50SetupOneView: View {
             Text("Next")
                 .frame(width: 300, height: 50)
                 .foregroundColor(.white)
-                .background( Color.orange.opacity(0.7))
+                .background( Color.buttonColorRed)
         }
         .padding(.bottom)
     }

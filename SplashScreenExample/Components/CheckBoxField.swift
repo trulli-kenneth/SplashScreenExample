@@ -22,7 +22,7 @@ struct CheckboxField: View {
         id: String,
         label:String,
         size: CGFloat = 10,
-        color: Color = Color.black,
+        color: Color = Color("TrulliBlack"),
         textSize: Int = 14,
         isLink: Bool = false,
         callback: @escaping ()->Void,
@@ -52,7 +52,7 @@ struct CheckboxField: View {
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: self.size, height: self.size)
-                    .foregroundColor(Color.black)
+                    .foregroundColor(Color("TrulliBlack"))
             }
                 Button(action: {
                     self.otherAction()

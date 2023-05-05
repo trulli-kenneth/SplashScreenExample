@@ -10,7 +10,7 @@ import SwiftUI
 struct Bass50SetupManualSyncView: View {
     var body: some View {
         ZStack {
-            Color(.trulliGold)
+            Color.trulliGold
                 .ignoresSafeArea()
             VStack {
                 Text("Manual Sync")
@@ -89,7 +89,7 @@ struct Bass50SetupManualSyncView: View {
                     Text("CONTINUE")
                         .frame(width: 300, height: 50)
                         .foregroundColor(.white)
-                        .background( Color.orange.opacity(0.7))
+                        .background( Color.buttonColorRed )
                         .padding()
                 }
             }

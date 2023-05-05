@@ -10,7 +10,7 @@ import SwiftUI
 struct Bass50SetupFiveView: View {
     var body: some View {
         ZStack {
-            Color(.trulliGold)
+            Color.trulliGold
                 .ignoresSafeArea()
             VStack{
                 Text("The Trulli Vehicle Kit is required for setup")
@@ -39,7 +39,7 @@ struct Bass50SetupFiveView: View {
                 .foregroundColor(.white)
         }
         .padding()
-        .background(Color.orange)
+        .background(Color.buttonColorRed)
         .foregroundColor(.white)
         .clipShape(Capsule())
         .padding(.bottom, 32)

@@ -28,7 +28,7 @@ struct WelcomeScreenView: View {
 
     var body: some View {
             ZStack {
-                Color(.trulliGold)
+                Color.trulliGold
                     .ignoresSafeArea()
                 VStack(alignment: .center, spacing: 8) {
                     header
@@ -76,7 +76,7 @@ struct WelcomeScreenView: View {
         }
         .padding()
         .frame(width: 200)
-        .background(Color.orange)
+        .background(Color.buttonColorRed)
         .foregroundColor(.white)
         .clipShape(Capsule())
         .padding(.top, 32)
@@ -87,12 +87,12 @@ struct WelcomeScreenView: View {
             path.append(GreaterViewOptions.speakerSetUpStart)
         }) {
             Text("Close")
-                .foregroundColor(Color.orange)
+                .foregroundColor(Color.buttonColorRed)
                 .underline()
         }
         .padding()
         .frame(width: 200)
-        .foregroundColor(Color.orange)
+        .foregroundColor(Color.buttonColorRed)
         .clipShape(Capsule())
     }
     

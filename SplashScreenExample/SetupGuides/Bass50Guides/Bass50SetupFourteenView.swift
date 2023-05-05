@@ -10,7 +10,7 @@ import SwiftUI
 struct Bass50SetupFourteenView: View {
     var body: some View {
         ZStack {
-            Color(.trulliGold)
+            Color.trulliGold
                 .ignoresSafeArea()
             VStack {
                 Text("Connection successful. Next, mount your remote.")

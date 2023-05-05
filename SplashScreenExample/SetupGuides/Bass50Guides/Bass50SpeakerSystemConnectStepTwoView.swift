@@ -10,7 +10,7 @@ import SwiftUI
 struct Bass50SpeakerSystemConnectStepTwoView: View {
     var body: some View {
         ZStack {
-            Color(.trulliGold)
+            Color.trulliGold
                 .ignoresSafeArea()
             VStack {
                 Text("Step Two")

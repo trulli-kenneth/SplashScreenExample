@@ -47,6 +47,11 @@
 		A52F1E8E29C2524D004896DC /* ContentViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52F1E8D29C2524D004896DC /* ContentViewViewModel.swift */; };
 		A52F1E9029C25544004896DC /* WelcomeScreenViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52F1E8F29C25544004896DC /* WelcomeScreenViewViewModel.swift */; };
 		A52F1E9629C25DD1004896DC /* SetupGuideSpeakerSearchViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52F1E9529C25DD1004896DC /* SetupGuideSpeakerSearchViewViewModel.swift */; };
+		A5C4F2A42A0E91EF009BBF4D /* SpeakerRegistrationEnterEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C4F2A32A0E91EF009BBF4D /* SpeakerRegistrationEnterEmailView.swift */; };
+		A5C4F2A62A0E9999009BBF4D /* SpeakerRegistrationEnterPhoneNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C4F2A52A0E9999009BBF4D /* SpeakerRegistrationEnterPhoneNumberView.swift */; };
+		A5C4F2A82A0E9B48009BBF4D /* SpeakerRegistrationSpeakerLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C4F2A72A0E9B48009BBF4D /* SpeakerRegistrationSpeakerLocation.swift */; };
+		A5C4F2AA2A0EA3EE009BBF4D /* SpeakerRegistrationVehicleInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C4F2A92A0EA3ED009BBF4D /* SpeakerRegistrationVehicleInfoView.swift */; };
+		A5C4F2AC2A0EA58C009BBF4D /* SpeakerRegistrationCompleteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C4F2AB2A0EA58C009BBF4D /* SpeakerRegistrationCompleteView.swift */; };
 		A5D2DAA729CB40B00029993B /* Bass50SetupFourView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D2DAA629CB40B00029993B /* Bass50SetupFourView.swift */; };
 		A5D2DAA929CB46E60029993B /* Bass50SetupFiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D2DAA829CB46E60029993B /* Bass50SetupFiveView.swift */; };
 		A5D2DAAB29CB4A7A0029993B /* Bass50SetupSixView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D2DAAA29CB4A7A0029993B /* Bass50SetupSixView.swift */; };
@@ -87,6 +92,14 @@
 		A5D2DAFB2A0148980029993B /* JAM5TroubleShootingGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D2DAFA2A0148980029993B /* JAM5TroubleShootingGuideView.swift */; };
 		A5D2DAFD2A014FDB0029993B /* ContactUsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D2DAFC2A014FDB0029993B /* ContactUsView.swift */; };
 		A5D2DB002A05695D0029993B /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D2DAFF2A05695D0029993B /* NotificationView.swift */; };
+		A5D2DB022A0D2FF30029993B /* DropdownMenuOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D2DB012A0D2FF30029993B /* DropdownMenuOption.swift */; };
+		A5D2DB0C2A0D44E90029993B /* DropDownTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D2DB0B2A0D44E90029993B /* DropDownTest.swift */; };
+		A5D2DB542A0E79940029993B /* DropdownMenuList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D2DB512A0E79940029993B /* DropdownMenuList.swift */; };
+		A5D2DB552A0E79940029993B /* DropdownMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D2DB522A0E79940029993B /* DropdownMenu.swift */; };
+		A5D2DB562A0E79940029993B /* DropdownMenuListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D2DB532A0E79940029993B /* DropdownMenuListRow.swift */; };
+		A5D2DB592A0E7FD90029993B /* SpeakerRegistrationChooseSpeakerTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D2DB582A0E7FD90029993B /* SpeakerRegistrationChooseSpeakerTypeView.swift */; };
+		A5D2DB5B2A0E86380029993B /* SpeakerRegistrationEnterNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D2DB5A2A0E86380029993B /* SpeakerRegistrationEnterNameView.swift */; };
+		A5D2DB5D2A0E88B00029993B /* SpeakerRegistrationEnterAddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D2DB5C2A0E88AF0029993B /* SpeakerRegistrationEnterAddressView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -152,6 +165,11 @@
 		A52F1E8D29C2524D004896DC /* ContentViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewViewModel.swift; sourceTree = "<group>"; };
 		A52F1E8F29C25544004896DC /* WelcomeScreenViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreenViewViewModel.swift; sourceTree = "<group>"; };
 		A52F1E9529C25DD1004896DC /* SetupGuideSpeakerSearchViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupGuideSpeakerSearchViewViewModel.swift; sourceTree = "<group>"; };
+		A5C4F2A32A0E91EF009BBF4D /* SpeakerRegistrationEnterEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerRegistrationEnterEmailView.swift; sourceTree = "<group>"; };
+		A5C4F2A52A0E9999009BBF4D /* SpeakerRegistrationEnterPhoneNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerRegistrationEnterPhoneNumberView.swift; sourceTree = "<group>"; };
+		A5C4F2A72A0E9B48009BBF4D /* SpeakerRegistrationSpeakerLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerRegistrationSpeakerLocation.swift; sourceTree = "<group>"; };
+		A5C4F2A92A0EA3ED009BBF4D /* SpeakerRegistrationVehicleInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerRegistrationVehicleInfoView.swift; sourceTree = "<group>"; };
+		A5C4F2AB2A0EA58C009BBF4D /* SpeakerRegistrationCompleteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerRegistrationCompleteView.swift; sourceTree = "<group>"; };
 		A5D2DAA629CB40B00029993B /* Bass50SetupFourView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bass50SetupFourView.swift; sourceTree = "<group>"; };
 		A5D2DAA829CB46E60029993B /* Bass50SetupFiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bass50SetupFiveView.swift; sourceTree = "<group>"; };
 		A5D2DAAA29CB4A7A0029993B /* Bass50SetupSixView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bass50SetupSixView.swift; sourceTree = "<group>"; };
@@ -192,6 +210,14 @@
 		A5D2DAFA2A0148980029993B /* JAM5TroubleShootingGuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JAM5TroubleShootingGuideView.swift; sourceTree = "<group>"; };
 		A5D2DAFC2A014FDB0029993B /* ContactUsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsView.swift; sourceTree = "<group>"; };
 		A5D2DAFF2A05695D0029993B /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		A5D2DB012A0D2FF30029993B /* DropdownMenuOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownMenuOption.swift; sourceTree = "<group>"; };
+		A5D2DB0B2A0D44E90029993B /* DropDownTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownTest.swift; sourceTree = "<group>"; };
+		A5D2DB512A0E79940029993B /* DropdownMenuList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropdownMenuList.swift; sourceTree = "<group>"; };
+		A5D2DB522A0E79940029993B /* DropdownMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropdownMenu.swift; sourceTree = "<group>"; };
+		A5D2DB532A0E79940029993B /* DropdownMenuListRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropdownMenuListRow.swift; sourceTree = "<group>"; };
+		A5D2DB582A0E7FD90029993B /* SpeakerRegistrationChooseSpeakerTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerRegistrationChooseSpeakerTypeView.swift; sourceTree = "<group>"; };
+		A5D2DB5A2A0E86380029993B /* SpeakerRegistrationEnterNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerRegistrationEnterNameView.swift; sourceTree = "<group>"; };
+		A5D2DB5C2A0E88AF0029993B /* SpeakerRegistrationEnterAddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerRegistrationEnterAddressView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,6 +269,7 @@
 		A508D86529804D3F00624B83 /* SplashScreenExample */ = {
 			isa = PBXGroup;
 			children = (
+				A5D2DB572A0E7FAF0029993B /* SpeakerRegistration */,
 				A5D2DAEB29FC55F60029993B /* ButtonStyles */,
 				A5D2DAE629F96A910029993B /* SettingsTab */,
 				A52F1E5129BA4F1D004896DC /* TabView */,
@@ -350,6 +377,11 @@
 				A52F1D352992B354004896DC /* PopupView.swift */,
 				A52F1D4529958499004896DC /* SoundProfilePopupView.swift */,
 				A5D2DAFF2A05695D0029993B /* NotificationView.swift */,
+				A5D2DB012A0D2FF30029993B /* DropdownMenuOption.swift */,
+				A5D2DB522A0E79940029993B /* DropdownMenu.swift */,
+				A5D2DB512A0E79940029993B /* DropdownMenuList.swift */,
+				A5D2DB532A0E79940029993B /* DropdownMenuListRow.swift */,
+				A5D2DB0B2A0D44E90029993B /* DropDownTest.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -519,6 +551,21 @@
 			path = ButtonStyles;
 			sourceTree = "<group>";
 		};
+		A5D2DB572A0E7FAF0029993B /* SpeakerRegistration */ = {
+			isa = PBXGroup;
+			children = (
+				A5D2DB582A0E7FD90029993B /* SpeakerRegistrationChooseSpeakerTypeView.swift */,
+				A5D2DB5A2A0E86380029993B /* SpeakerRegistrationEnterNameView.swift */,
+				A5D2DB5C2A0E88AF0029993B /* SpeakerRegistrationEnterAddressView.swift */,
+				A5C4F2A32A0E91EF009BBF4D /* SpeakerRegistrationEnterEmailView.swift */,
+				A5C4F2A52A0E9999009BBF4D /* SpeakerRegistrationEnterPhoneNumberView.swift */,
+				A5C4F2A72A0E9B48009BBF4D /* SpeakerRegistrationSpeakerLocation.swift */,
+				A5C4F2A92A0EA3ED009BBF4D /* SpeakerRegistrationVehicleInfoView.swift */,
+				A5C4F2AB2A0EA58C009BBF4D /* SpeakerRegistrationCompleteView.swift */,
+			);
+			path = SpeakerRegistration;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -658,12 +705,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5D2DAAD29CB4D960029993B /* Bass50SetupNineView.swift in Sources */,
+				A5D2DB022A0D2FF30029993B /* DropdownMenuOption.swift in Sources */,
 				A52F1E5329BA4F41004896DC /* BaseView.swift in Sources */,
 				A5D2DAFD2A014FDB0029993B /* ContactUsView.swift in Sources */,
 				A5D2DAB529CC8D890029993B /* Bass50SetupFourteenView.swift in Sources */,
 				A52F1E2929ACFBC0004896DC /* SetupGuideSpeakerConnectionStepTwoView.swift in Sources */,
+				A5D2DB5B2A0E86380029993B /* SpeakerRegistrationEnterNameView.swift in Sources */,
 				A52F1D3C2992CA78004896DC /* WelcomeScreenView.swift in Sources */,
 				A5D2DAF72A0143780029993B /* JAM5TipsAndTricksView.swift in Sources */,
+				A5D2DB5D2A0E88B00029993B /* SpeakerRegistrationEnterAddressView.swift in Sources */,
 				A5D2DADB29E9977B0029993B /* SoundPresetCreationNameSoundView.swift in Sources */,
 				A5D2DABF29CCA3790029993B /* Bass50SetupNineteenSyncStartView.swift in Sources */,
 				A52F1D402993FE9A004896DC /* WelcomeScreenTabbedView.swift in Sources */,
@@ -671,14 +721,18 @@
 				A52F1D362992B354004896DC /* PopupView.swift in Sources */,
 				A5D2DAB929CC93A80029993B /* Bass50SetupThirteenLastAttemptView.swift in Sources */,
 				A5D2DAF52A0143260029993B /* TipsAndTricksView.swift in Sources */,
+				A5D2DB552A0E79940029993B /* DropdownMenu.swift in Sources */,
 				A508D86929804D3F00624B83 /* ContentView.swift in Sources */,
 				A5D2DACB29D1E9B20029993B /* Bass50SetupSpeakerSystemStartView.swift in Sources */,
 				A52F1D48299D18A9004896DC /* AddSpeakerCardView.swift in Sources */,
+				A5C4F2A42A0E91EF009BBF4D /* SpeakerRegistrationEnterEmailView.swift in Sources */,
 				A52F1E4229B68154004896DC /* FirmwareUpdateView.swift in Sources */,
 				A52F1D4229954BB0004896DC /* HomeView.swift in Sources */,
 				A52F1E4829B8ED55004896DC /* Bass50SetupTwoView.swift in Sources */,
 				A5D2DAEF2A013C720029993B /* ButtonGuidesView.swift in Sources */,
+				A5D2DB562A0E79940029993B /* DropdownMenuListRow.swift in Sources */,
 				A52F1D382992B380004896DC /* PopupViewModifier.swift in Sources */,
+				A5D2DB0C2A0D44E90029993B /* DropDownTest.swift in Sources */,
 				A52F1CE52981A7A5004896DC /* BumperScreen.swift in Sources */,
 				A52F1E9629C25DD1004896DC /* SetupGuideSpeakerSearchViewViewModel.swift in Sources */,
 				A52F1E4A29B8EE06004896DC /* Bass50SetupThreeView.swift in Sources */,
@@ -686,6 +740,7 @@
 				A5D2DAB729CC91680029993B /* Bass50Setup13FailedView.swift in Sources */,
 				A5D2DAA929CB46E60029993B /* Bass50SetupFiveView.swift in Sources */,
 				A52F1D4629958499004896DC /* SoundProfilePopupView.swift in Sources */,
+				A5C4F2A62A0E9999009BBF4D /* SpeakerRegistrationEnterPhoneNumberView.swift in Sources */,
 				A52F1E3B29B67365004896DC /* GreaterViewOptions.swift in Sources */,
 				A52F1E9029C25544004896DC /* WelcomeScreenViewViewModel.swift in Sources */,
 				A5D2DAC729D1E4B20029993B /* Bass50SetupAutoSyncUnsuccessfulView.swift in Sources */,
@@ -699,6 +754,7 @@
 				A5D2DAD529D32DD20029993B /* Bass50SpeakerSystemConnectStepThreeView.swift in Sources */,
 				A52F1CEE2982D45C004896DC /* BumperScreenViewModel.swift in Sources */,
 				A5D2DAB329CC85D40029993B /* Bass50SetupThirteenView.swift in Sources */,
+				A5D2DB592A0E7FD90029993B /* SpeakerRegistrationChooseSpeakerTypeView.swift in Sources */,
 				A5D2DADD29E9A69C0029993B /* SoundPresetCreationLocationsView.swift in Sources */,
 				A5D2DAD129D20A4F0029993B /* Bass50SpeakerSystemConnectStepTwoView.swift in Sources */,
 				A508D89129804D9C00624B83 /* SplashScreenView.swift in Sources */,
@@ -717,8 +773,11 @@
 				A5D2DAB129CB53EB0029993B /* Bass50SetupTwelveView.swift in Sources */,
 				A5D2DAD329D20C0C0029993B /* Bass50SpeakerSystemConnectSuccuessfulView.swift in Sources */,
 				A52F1D442995509C004896DC /* SpeakerCardView.swift in Sources */,
+				A5C4F2A82A0E9B48009BBF4D /* SpeakerRegistrationSpeakerLocation.swift in Sources */,
 				A52F1E2729ACF712004896DC /* SetupGuideSpeakerConnectionStepOneView.swift in Sources */,
 				A52F1E4429B684A7004896DC /* JamRegisterView.swift in Sources */,
+				A5C4F2AA2A0EA3EE009BBF4D /* SpeakerRegistrationVehicleInfoView.swift in Sources */,
+				A5D2DB542A0E79940029993B /* DropdownMenuList.swift in Sources */,
 				A52F1D3A2992B3A2004896DC /* View+Extension.swift in Sources */,
 				A52F1E4029B677BE004896DC /* JamConnectionSuccessfulView.swift in Sources */,
 				A508D8952980775300624B83 /* SplashScreenViewModel.swift in Sources */,
@@ -726,6 +785,7 @@
 				A5D2DAEA29FABF8B0029993B /* AppSettingsView.swift in Sources */,
 				A52F1D342992B331004896DC /* SheetManager.swift in Sources */,
 				A5D2DAC929D1E5660029993B /* Bass50SetupManualSyncView.swift in Sources */,
+				A5C4F2AC2A0EA58C009BBF4D /* SpeakerRegistrationCompleteView.swift in Sources */,
 				A5D2DAFB2A0148980029993B /* JAM5TroubleShootingGuideView.swift in Sources */,
 				A5D2DAE529F175890029993B /* SoundSettingsView.swift in Sources */,
 				A52F1E8E29C2524D004896DC /* ContentViewViewModel.swift in Sources */,
